@@ -1,0 +1,38 @@
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<div class="nav">
+	<div class="navLeft">
+		<span class="logo"></span>
+		<span class="pName">经营分析平台</span>
+	</div>
+	<div class="navRight">
+		<ul>
+			<li class="curTab">我的工作台</li>
+			<li>平台管理</li>
+		</ul>
+		<div class="user">
+			<span class="icon-notice"></span>
+			<span class="userName">王松林</span>
+			<span class="icon-down"></span>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$('.navRight li').click(function(){
+			var obj = $(this),
+				index = obj.index(),
+				target = obj.parents('.nav').siblings('.container').find('.content').eq(index);
+			obj.addClass('curTab').siblings().removeClass('curTab');
+			target.show().siblings().hide();
+			if(index == 0){
+				target.load('workingPlatform.html');
+				$(document).attr('title','我的工作台');
+			}
+			if(index == 1){
+				target.load('platformManagement.html');
+				$(document).attr('title','平台管理');
+			}
+		});
+		$('.navRight li').eq(0).trigger('click');
+	});
+</script>

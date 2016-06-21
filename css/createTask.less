@@ -1,0 +1,265 @@
+@import url(../css/reset.less);
+.container{
+	margin: 10px 20px;
+}
+.block{
+	border:solid 1px #dddddd;
+	margin-top: 10px;
+	padding: 10px 20px;
+	font-size: 14px;
+	background: #ffffff;
+	.round(5px);
+	.step{
+		height: 5px;
+		border: solid 1px #656565;
+		background: #c4c4c4;
+		margin-top: 5px;
+		display: table;
+		width: 100%;
+		.round(20px);
+		.step-1{
+			display: table-cell;
+			height: 5px;
+			width: 50%;
+			background: #5b8dd8;
+			position: relative;
+			.round(20px);
+		}
+		.step-1:after{
+			content: url(../image/icon-step1.png);
+			display: inline-block;
+			width: 8px;
+			height: 9px;
+			position: absolute;
+			top: -10px;
+			left: 50%;
+			margin-left: -4px;
+		}
+		.step-2{
+			display: table-cell;
+			height: 5px;
+			width: 50%;
+			background: #c4c4c4;
+			position: relative;
+			.round(20px);
+		}
+		.step-2:after{
+			content: url(../image/icon-step2.png);
+			display: inline-block;
+			width: 8px;
+			height: 9px;
+			position: absolute;
+			top: -10px;
+			left: 50%;
+			margin-left: -4px;
+		}
+	}
+	.text{
+		display: table;
+		width: 100%;
+		.left{
+			display: table-cell;
+			width: 50%;
+			text-align: center;
+		}
+		.right{
+			display: table-cell;
+			width: 50%;
+			text-align: center;
+		}
+		.sp{
+			color: #5b8dd8;
+			font-size: 24px;
+		}
+		.cn{
+			color: #5b8dd8;
+			font-size: 12px;
+			line-height: 25px;
+		}
+		.spd{
+			color: #343434;
+			font-size: 24px;
+		}
+		.cnd{
+			color: #343434;
+			font-size: 12px;
+			line-height: 25px;
+		}
+	}
+	.img-f{
+		display: inline-block;
+		width: 90px;
+		height: 74px;
+		background: url('../image/failed.png') no-repeat;
+		vertical-align: middle;
+	}
+	.img-s{
+		display: inline-block;
+		width: 90px;
+		height: 74px;
+		background: url('../image/success.png') no-repeat;
+		vertical-align: middle;
+	}
+	.warning{
+		display: inline-block;
+		vertical-align: middle;
+		.faild{
+			font-size: 26px;
+			color: #d5311f;
+		}
+		.success{
+			font-size: 26px;
+			color: #52a65f;
+		}
+		.ds{
+			font-size: 14px;
+			color: #343434;
+			margin-top: 10px;
+		}
+	}
+}
+.hint{
+	padding-top: 20px;
+	color: #343434;
+	label{
+		font-size: 14px;
+		margin-left: 10px;
+	}
+	button{
+		width: 150px;
+		margin-left: 20px;
+	}
+	a{
+		color: #166bec;
+		text-decoration: underline;
+	}
+}
+.tip{
+	padding: 10px 0 0 10px;
+	p{
+		font-size: 12px;
+		color: #343434;
+		line-height: 20px;
+	}
+}
+.classify{
+	border:solid 1px #dddddd;
+	margin-top: 15px;
+	padding-top: 15px;
+	font-size: 14px;
+	background: #ffffff;
+	.round(5px);
+	label{
+		margin-left: 20px;
+	}
+	.area{
+		width: 60px;
+		height: 25px;
+		line-height: 25px;
+		margin-left: 30px;
+		font-size: 12px;
+	}
+	ul{
+		margin-top: 10px;
+		overflow: hidden;
+		padding-left: 10px;
+	}
+	li{
+		display: inline-block;
+		margin-bottom: 10px;
+		cursor: pointer;
+		padding: 5px 10px;
+		margin-right: 29px;
+	}
+}
+.next{
+	text-align: center;
+	padding: 40px 0;
+	button{
+		width: 115px;
+	}
+	.btn-submit{
+		margin-left: 20px;
+	}
+}
+.step-second{
+	display: none;
+	margin-top: 20px;
+	table{
+		width: 100%;
+	    border: solid 1px #dddddd;
+	    background: #ffffff;
+		th{
+		    height: 35px;
+		    text-align: center;
+		    font-size: 14px;
+		    color: #343434;
+		    background: #ededed;
+		    border-top: solid 1px #dddddd;
+		    border-bottom: solid 1px #dddddd;
+		    font-weight: lighter;
+		    vertical-align: middle;
+		}
+		td{
+		    height: 35px;
+		    text-align: center;
+		    font-size: 12px;
+		    color: #343434;
+		    border-bottom: solid 1px #dddddd;
+		    vertical-align: middle;
+		    input{
+	    	    border: solid 1px #dddddd;
+	    	    height: 20px;
+	    	    text-align: center;
+		    }
+		}
+	}
+	.total{
+		padding: 10px;
+		color: #343434;
+		font-size: 14px;
+		border-bottom: dashed 1px #dddddd;
+		dd{
+			margin-bottom: 10px;
+		}
+	}
+	.title{
+		font-size: 14px;
+		color: #343434;
+		padding: 15px 10px;
+	}
+}
+.table{
+	margin-top: 10px;
+	table{
+		width: 100%;
+		background: #ffffff;
+		color: #343434;
+		td{
+			height: 30px;
+			border:solid 1px #dddddd;
+			vertical-align: middle;
+			font-size: 12px;
+		}
+		.label{
+			text-align: right;
+			padding-right: 15px;
+		}
+		.ct{
+			text-align: left;
+			padding-left: 15px;
+		}
+	}
+}
+.bb{
+	border-bottom: dashed 1px #dddddd;
+	margin-top: 10px;
+}
+.details{
+	margin-top: 15px;
+	h3{
+		font-size: 16px;
+		color: #343434;
+		font-weight: bold;
+	}
+}

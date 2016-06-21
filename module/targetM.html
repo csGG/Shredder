@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+	<div class="target">
+		<div class="new-content">
+			<div class="tHeader">
+				指标类型管理
+				<span class="close"></span>
+			</div>
+			<div class="outer">
+				<div class="addTarget">
+					<div class="addBlock">
+						<dl>
+							<dd>
+								<label class="red">*</label>
+								<label class="name">类型名称</label>
+								<div class="bc">
+									<input type="text" >
+								</div>
+							</dd>
+							<dd>
+								<label class="red">*</label>
+								<label class="name">单位</label>
+								<div class="bc">
+									<span class="us"></span>
+									<select>
+										<option selected="selected">请选择</option>
+										<option>元</option>
+										<option>%</option>
+									</select>
+									<span class="arrow"></span>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<span class="icon-add"></span>
+				</div>
+				<div class="tSubmit">
+					<button class="btn btn-done">完成</button>
+					<button class="btn btn-cancel">取消</button>
+				</div>
+				<div class="targetT">
+					<table>
+						<thead>
+							<tr>
+								<th>指标类型</th>
+								<th>单位</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							<tr>
+								<td>A类(元)</td>
+								<td>元</td>
+								<td>正常</td>
+								<td>
+									<button>编辑</button>
+									<button>禁用</button>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+					<div class="pager pBorder">
+						<a href="javascript:;"><</a>
+						<a href="javascript:;">1</a>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;" class="curPage">3</a>
+						<a href="javascript:;">4</a>
+						<a href="javascript:;">5</a>
+						<span>…</span>
+						<a href="javascript:;">10</a>
+						<a href="javascript:;">11</a>
+						<a href="javascript:;">12</a>
+						<a href="javascript:;">></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/taskSetting.js"></script>
+<script type="text/javascript">
+	$('.us').html($('.us').siblings('select').find('option:selected').val());
+	$('.bc select').change(function() {
+		var sVal = $(this).find('option:selected').val();
+		$(this).siblings('.us').html(sVal);
+	});
+</script>
+</html>

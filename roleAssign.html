@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/role.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+	<title></title>
+</head>
+<body>
+	<div class="header">
+		<h3>角色分配</h3>
+	</div>
+	<div class="outer">
+		<div class="action">
+			<ul>
+				<li>
+					<label>用户名</label>
+					<input type="text" class="userName">
+				</li>
+				<li>
+					<label>状态</label>
+					<span class="selected"></span>
+					<span class="arrow-down"></span>
+					<select class="option">
+						<option selected="selected">正常</option>
+						<option>禁用</option>
+					</select>
+				</li>				
+				<li>
+					<label>业务线</label>
+					<span  class="selected"></span>
+					<span class="arrow-down"></span>
+					<select class="option">
+						<option selected="selected">房产</option>
+						<option>二手车</option>
+						<option>英才</option>
+					</select>
+				</li>
+				<li>
+					<button class="btn w125">筛选</button>
+				</li>
+				<li>
+					<button class="btn w125 new-build">新建用户</button>
+				</li>
+			</ul>
+		</div>
+		<div class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>用户名</th>
+						<th>姓名</th>
+						<th>业务线</th>
+						<th>所属部门</th>
+						<th>状态</th>
+						<th>创建时间</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>			
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>			
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>			
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>			
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>			
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>			
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>			
+					<tr>
+						<td>liufengyu</td>
+						<td>刘丰羽</td>
+						<td>房产</td>
+						<td>北区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>
+					<tr>
+						<td>wangxiaoming</td>
+						<td>王小明</td>
+						<td>房产</td>
+						<td>南区二手房（北京）</td>
+						<td>正常</td>
+						<td>2016-06-01 14:00</td>
+						<td>
+							<a href="javascript:;" class="operate">编辑</a>
+							<a href="javascript:;" class="operate">禁用</a>
+						</td>
+					</tr>						
+				</tbody>
+			</table>
+			<div class="pager">
+				<a href="javascript:;"><</a>
+				<a href="javascript:;">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;" class="curPage">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<span>…</span>
+				<a href="javascript:;">10</a>
+				<a href="javascript:;">11</a>
+				<a href="javascript:;">12</a>
+				<a href="javascript:;">></a>
+			</div>
+		</div>
+		<div class="mask-c">
+			
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/role.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.selected').each(function(){
+			var obj = $(this);
+			obj.html(obj.siblings('.option').find('option:selected').val());
+		});		
+		$('.option').change(function(){
+			var obj_o = $(this);
+			var sVal = obj_o.find('option:selected').val();
+			obj_o.siblings('.selected').html(sVal);
+		});
+
+		//新建用户
+		$('.new-build').click(function(){
+			$('.mask-c').load('module/buildUser.html');
+		});
+	});
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/taskSet.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<title></title>
+</head>
+<body>
+	<div class="header">
+		<h3>任务配置</h3>
+	</div>
+	<div class="tab">
+		<ul>
+			<li class="tabC">部门分组</li>
+			<li>员工分组</li>
+			<li>职级任务标准</li>
+			<li>允许调整时间</li>
+			<li>考核指标</li>
+		</ul>
+	</div>
+	<div class="container">
+		<iframe id="setting" src="module/deGroup.html" height="1052px" width="100%" scrolling="no"></iframe>
+	</div>
+</body>
+<script type="text/javascript" src="js/taskSetting.js"></script>
+<script type="text/javascript">
+	$('.tab li').on('click',function(){
+		var obj = $(this),
+			index = obj.index();
+		obj.addClass('tabC').siblings().removeClass('tabC');
+		if(index == 0){
+			$('#setting').attr('src','module/deGroup.html');
+		}
+		if(index == 1){
+			$('#setting').attr('src','module/emGroup.html');
+		}
+		if(index == 2){
+			$('#setting').attr('src','module/leRule.html');
+		}
+		if(index == 3){
+			$('#setting').attr('src','module/adTime.html');
+		}
+		if(index == 4){
+			$('#setting').attr({
+				'src':'module/chTarget.html',
+				'height':'1200px'
+			});
+		}
+	});
+</script>
+</html>
