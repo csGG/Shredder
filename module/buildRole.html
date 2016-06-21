@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div class="mask">
+	<div class="dialog-role">
+		<div class="title">
+			新建互斥角色
+			<span class="close"></span>
+		</div>
+		<div class="d-content">
+			<dl>
+				<dd>
+					<label class="must">*</label>
+					<label class="tag-r" data-role="1">角色1</label>
+					<button class="selected middle"></button>
+					<span class="arrow"></span>
+					<select class="optionR">
+						<option selected="selected">请选择</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</dd>
+				<dd>
+					<label class="must">*</label>
+					<label class="tag-r" data-role="2">角色2</label>
+					<button class="selected middle"></button>
+					<span class="arrow"></span>
+					<select class="optionR">
+						<option selected="selected">请选择</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+					<span class="add-role"></span>
+				</dd>
+			</dl>
+			<div class="center">
+				<a href="javascript:;" class="btn w_done">完成</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/role.js"></script>
+<script type="text/javascript">
+	$('.d-content .selected').each(function(){
+		var obj = $(this);
+		obj.html(obj.siblings('.optionR').find('option:selected').val());
+
+		$('.optionR').change(function(){
+			var obj_o = $(this);
+			var sVal = $('.optionR').find('option:selected').val();
+			obj_o.siblings('.selected').html(sVal);
+		});
+	});
+</script>
+</html>

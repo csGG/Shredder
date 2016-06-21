@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/taskSet.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<title></title>
+</head>
+<body>
+	<div class="content border">
+		<div class="operate pad0">
+			<ul class="ulLe">
+				<li class="active">销售</li>
+				<li>客服</li>
+				<li>英才项目</li>
+			</ul>
+			<!--业务线-->
+			<div class="block check">
+				<label class="tag">业务线</label>
+				<span class="mDrop selected"></span>
+				<select class="le">
+					<option selected="selected">全部</option>
+					<option>失效员工</option>
+					<option>222</option>
+				</select>
+				<span class="arrow arrow-le"></span>
+				<button class="more">更多筛选<span class="unfold"></span></button>
+			</div>
+			<div class="hl">
+				<!--管辖部门城市-->
+				<div class="check filter">
+					<label class="tag">管辖部门城市</label>
+					<input type="search" class="search" placeholder="可输入拼音、汉字查找">
+					<span class="icon-search"></span>
+					<div class="dMore">
+						<ul>
+							<li class="active">全部</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+						</ul>
+						<button class="btn-more">更多<span></span></button>
+					</div>
+				</div>
+				<!--考核指标-->
+				<div class="check filter">
+					<label class="tag">考核指标</label>
+					<input type="search" class="search" placeholder="可输入拼音、汉字查找">
+					<span class="icon-search"></span>
+					<div class="dMore">
+						<ul>
+							<li class="active">全部</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+							<li>续费</li>
+							<li>新签</li>
+						</ul>
+						<button class="btn-more">更多<span></span></button>
+					</div>
+				</div>
+				<!--职级-->
+				<div class="check filter">
+					<label class="tag">职级</label>
+					<ul class="iBlock">
+						<li class="active">全部</li>
+						<li>S1</li>
+						<li>S2</li>
+						<li>S3</li>
+						<li>S4</li>
+						<li>S5</li>
+						<li>S6</li>
+						<li>S7</li>
+						<li>S8</li>
+					</ul>
+				</div>
+				<!--员工-->
+				<div class="check filter">
+					<div class="inline">
+						<label class="tag">员工姓名</label>
+						<input type="text" class="emInfo">
+					</div>
+					<div class="inline iC">
+						<label class="tag">工号</label>
+						<input type="text" class="emInfo">
+					</div>
+					<div class="inline iR">
+						<label class="tag">销售方式</label>
+						<span class="mDrop sd"></span>
+						<select class="so">
+							<option selected="selected">全部</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+						<span class="arrow at"></span>
+					</div>
+				</div>
+				<div class="check filter">
+					<div class="inline">
+						<label class="tag">公司</label>
+						<span class="mDrop sd"></span>
+						<select class="so">
+							<option selected="selected">全部</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+						<span class="arrow at"></span>
+					</div>
+					<div class="inline iC">
+						<label class="tag">业绩类型</label>
+						<span class="mDrop sd"></span>
+						<select class="so">
+							<option selected="selected">全部</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+						<span class="arrow at"></span>
+					</div>
+					<div class="inline iR">
+						<label class="tag">状态</label>
+						<span class="mDrop sd"></span>
+						<select class="so">
+							<option selected="selected">全部</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+						<span class="arrow at"></span>
+					</div>
+				</div>
+				<div class="check filter">
+					<div class="hw">
+						<label class="tag">下限</label>
+						<input type="text" class="emInfo">
+						<label class="to">至</label>
+						<input type="text" class="emInfo">
+					</div>
+					<div class="hw">
+						<label class="tag">上限</label>
+						<input type="text" class="emInfo">
+						<label class="to">至</label>
+						<input type="text" class="emInfo">
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<button class="btn btn-filter">筛选</button>
+				<button class="btn btn-newRule">新建标准</button>
+			</div>
+		</div>
+		<div class="table leTable">
+			<table>
+				<thead>
+					<tr>
+						<th>员工</th>
+						<th>业务线</th>
+						<th>公司</th>
+						<th>销售方式</th>
+						<th>管辖部门城市</th>
+						<th>职级</th>
+						<th>考核指标</th>
+						<th>业绩类型</th>
+						<th>下限</th>
+						<th>上限</th>
+						<th>状态</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>10,000,000</td>
+						<td>10,000,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小明(1798)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>0</td>
+						<td>-</td>
+						<td>禁用</td>
+						<td>
+							<button>编辑</button>
+							<button>启用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>900,000</td>
+						<td>900,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>10,000,000</td>
+						<td>10,000,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小明(1798)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>0</td>
+						<td>-</td>
+						<td>禁用</td>
+						<td>
+							<button>编辑</button>
+							<button>启用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>900,000</td>
+						<td>900,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>10,000,000</td>
+						<td>10,000,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小明(1798)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>0</td>
+						<td>-</td>
+						<td>禁用</td>
+						<td>
+							<button>编辑</button>
+							<button>启用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>900,000</td>
+						<td>900,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>10,000,000</td>
+						<td>10,000,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小明(1798)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>0</td>
+						<td>-</td>
+						<td>禁用</td>
+						<td>
+							<button>编辑</button>
+							<button>启用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>900,000</td>
+						<td>900,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>10,000,000</td>
+						<td>10,000,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小明(1798)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>0</td>
+						<td>-</td>
+						<td>禁用</td>
+						<td>
+							<button>编辑</button>
+							<button>启用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>900,000</td>
+						<td>900,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>10,000,000</td>
+						<td>10,000,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小明(1798)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>0</td>
+						<td>-</td>
+						<td>禁用</td>
+						<td>
+							<button>编辑</button>
+							<button>启用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>900,000</td>
+						<td>900,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小蒙(1789)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>10,000,000</td>
+						<td>10,000,000</td>
+						<td>正常</td>
+						<td>
+							<button>编辑</button>
+							<button>禁用</button>
+						</td>				
+					</tr>
+					<tr>
+						<td>小明(1798)</td>
+						<td>房产</td>
+						<td>58</td>
+						<td>直销</td>
+						<td>北京</td>
+						<td>S9</td>
+						<td>指标a(元)</td>
+						<td>新签</td>
+						<td>0</td>
+						<td>-</td>
+						<td>禁用</td>
+						<td>
+							<button>编辑</button>
+							<button>启用</button>
+						</td>				
+					</tr>
+				</tbody>
+			</table>
+			<div class="pager">
+				<a href="javascript:;"><</a>
+				<a href="javascript:;">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;" class="curPage">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<span>…</span>
+				<a href="javascript:;">10</a>
+				<a href="javascript:;">11</a>
+				<a href="javascript:;">12</a>
+				<a href="javascript:;">></a>
+		</div>
+		</div>
+	</div>
+	<div class="dialog-rule"></div>
+</body>
+<script type="text/javascript" src="../js/taskSetting.js"></script>
+<script type="text/javascript">
+	$('.btn-newRule').click(function(){
+		$('.dialog-rule').load('newStandard.html');
+	});
+</script>
+</html>

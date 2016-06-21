@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <title></title>
+</head>
+<body>
+	<div class="nav">
+		<div class="navLeft">
+			<span class="logo"></span>
+			<span class="pName">经营分析平台</span>
+		</div>
+		<div class="navRight">
+			<ul>
+				<li class="curTab">我的工作台</li>
+				<li>平台管理</li>
+			</ul>
+			<div class="user">
+				<span class="icon-notice"></span>
+				<span class="userName">王松林</span>
+				<span class="icon-down"></span>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="container">
+		<div class="content"></div>
+		<div class="content"></div>
+	</div>
+	<div class="footer">五八信息技术有限公司@58.com</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$('.navRight li').click(function(){
+			var obj = $(this),
+				index = obj.index(),
+				target = obj.parents('.nav').siblings('.container').find('.content').eq(index);
+			obj.addClass('curTab').siblings().removeClass('curTab');
+			target.show().siblings().hide();
+			if(index == 0){
+				target.load('workingPlatform.html');
+				$(document).attr('title','我的工作台');
+			}
+			if(index == 1){
+				target.load('platformManagement.html');
+				$(document).attr('title','平台管理');
+			}
+		});
+		$('.navRight li').eq(0).trigger('click');
+	});
+</script>
+</html>

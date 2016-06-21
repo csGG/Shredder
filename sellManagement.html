@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/sellMgt.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<title></title>
+</head>
+<body>
+	<div class="header">
+		<h3>销售任务管理</h3>
+	</div>
+	<div class="tab">
+		<ul>
+			<li class="tabC">我的今年任务</li>
+			<li>我的往年任务</li>
+			<li>全部销售任务</li>
+		</ul>
+	</div>
+	<div class="container">
+		<iframe id="sell" src="module/thisYear.html" height="1052px" width="100%" scrolling="no"></iframe>
+	</div>
+</body>
+<script type="text/javascript" src="js/sellMgt.js"></script>
+<script type="text/javascript">
+	$('.tab li').on('click',function(){
+		var obj = $(this),
+			index = obj.index();
+		obj.addClass('tabC').siblings().removeClass('tabC');
+		if(index == 0){
+			$('#sell').attr('src','module/thisYear.html');
+		}
+		if(index == 1){
+			$('#sell').attr('src','module/lastYear.html');
+		}
+		if(index == 2){
+			$('#sell').attr('src','module/allSellTask.html');
+		}
+	});
+</script>
+</html>

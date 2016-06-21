@@ -1,0 +1,41 @@
+.section .tabTitle {
+  margin: 20px 20px 15px;
+}
+.target .outer {
+  height: auto;
+  overflow-y: auto;
+}
+.clr:after {
+  display: block;
+  content: '\20';
+  clear: both;
+}
+.float_r {
+  float: right;
+}
+.sp_section div {
+  display: inline-block;
+}
+.sp_section div.tabTitle {
+  font-size: 14px;
+  vertical-align: top;
+  margin-left: 8px;
+}
+.sp_section div.tableBox {
+  width: calc(100% - 103px);
+  margin: 15px 0;
+}
+.sum_span {
+  color: #9c7927;
+  font-size: 12px;
+  margin: 8px 0 0 70px;
+}
+.fm_btn_box {
+  text-align: center;
+  margin: 10px 10px 20px;
+}
+.btn-submit {
+  width: 115px;
+  height: 30px;
+  line-height: 30px;
+}

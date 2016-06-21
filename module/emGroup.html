@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/taskSet.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<title></title>
+</head>
+<body>
+	<div class="content border">
+		<div class="operate">
+			<ul>
+				<li class="active">销售</li>
+				<li>客服</li>
+				<li>英才项目</li>
+			</ul>
+			<div class="check">
+				<label>员工</label>
+				<span class="mDrop selected"></span>
+				<select class="em">
+					<option selected="selected">全部</option>
+					<option>失效员工</option>
+					<option>222</option>
+				</select>
+				<span class="arrow arrow-em"></span>
+			</div>
+			<div class="check">
+				<label>分组</label>
+				<span class="mDrop selected"></span>
+				<select class="em">
+					<option selected="selected">全部</option>
+					<option>111</option>
+					<option>222</option>
+				</select>
+				<span class="arrow arrow-em"></span>
+			</div>
+			<button class="btn btn-filter">筛选</button>
+		</div>
+		<div class="table emTable">
+			<table>
+				<thead>
+					<tr>
+						<th>姓名</th>
+						<th>工号</th>
+						<th>所在部门</th>
+						<th>管辖部门</th>
+						<th>职级</th>
+						<th>分组</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>
+							<span></span>未分组
+						</td>
+						<td>
+							<button>填报职级任务</button>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>
+							<span></span>未分组
+						</td>
+						<td>
+							<button>填报职级任务</button>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>
+							<span></span>未分组
+						</td>
+						<td>
+							<button>填报职级任务</button>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>
+							<span></span>未分组
+						</td>
+						<td>
+							<button>填报职级任务</button>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>不填报职级任务</td>
+						<td>
+							<button>填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>填报职级任务</td>
+						<td>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>不填报职级任务</td>
+						<td>
+							<button>填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>填报职级任务</td>
+						<td>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>不填报职级任务</td>
+						<td>
+							<button>填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>填报职级任务</td>
+						<td>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>不填报职级任务</td>
+						<td>
+							<button>填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>填报职级任务</td>
+						<td>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>不填报职级任务</td>
+						<td>
+							<button>填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>填报职级任务</td>
+						<td>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>不填报职级任务</td>
+						<td>
+							<button>填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>填报职级任务</td>
+						<td>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>不填报职级任务</td>
+						<td>
+							<button>填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>填报职级任务</td>
+						<td>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小蒙</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>北区房产渠道部</td>
+						<td>S9</td>
+						<td>不填报职级任务</td>
+						<td>
+							<button>填报职级任务</button>
+						</td>
+					</tr>
+					<tr>
+						<td>小王</td>
+						<td>1234</td>
+						<td>二手房销售部(北京)</td>
+						<td>西区房产渠道部</td>
+						<td>S9</td>
+						<td>填报职级任务</td>
+						<td>
+							<button>不填报职级任务</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pager">
+				<a href="javascript:;"><</a>
+				<a href="javascript:;">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;" class="curPage">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<span>…</span>
+				<a href="javascript:;">10</a>
+				<a href="javascript:;">11</a>
+				<a href="javascript:;">12</a>
+				<a href="javascript:;">></a>
+		</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/taskSetting.js"></script>
+</html>

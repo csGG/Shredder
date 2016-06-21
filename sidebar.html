@@ -1,0 +1,56 @@
+<div class="sideBar">
+	<div class="color">
+		<span class="blue"></span>
+		<span class="red"></span>
+		<span class="yellow"></span>
+		<span class="green"></span>
+	</div>
+	<div class="slideLeft">
+		<span class="icon-left"></span>
+	</div>
+	<div class="switchP">
+		<span id="selectedP" class="selected">切换管辖部门</span>
+		<span class="icon-dropdown"></span>
+	</div>
+	<div class="sideTab">
+		<ul>
+			<li>
+				<span class="sideC">任务进度</span>
+			</li>
+			<li>
+				<span class="side">销售任务管理</span>
+			</li>
+			<li>
+				<span class="side">职级任务管理</span>
+			</li>
+			<li>
+				<span class="side">任务配置</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$('.sideBar li').click(function(){
+			var obj = $(this),
+					index = obj.index();
+
+			obj.children().removeClass('side').addClass('sideC');
+			obj.siblings().children().removeClass('sideC').addClass('side');
+
+			if(index == 0){
+				$('#plat').attr('src','taskProgress.html')
+			}
+			if(index == 1){
+				$('#plat').attr('src','sellManagement.html');
+			}
+			if(index == 2){
+				$('#plat').attr('src','levelManagement.html');
+			}
+			if(index == 3){
+				$('#plat').attr('src','taskSetting.html');
+			}
+		});
+		$('.sideBar li').eq(1).trigger('click');
+	});
+</script>
